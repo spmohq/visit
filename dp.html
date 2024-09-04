@@ -7,7 +7,6 @@
     <meta name="description" content="Single Product Display Page">
     <meta name="keywords" content="Product, Deal, Single Product Page">
     <meta name="author" content="">
-    <link rel="icon" href="logo2.ico">
 
     <!-- Facebook OG Tags -->
     <meta property="og:title" content="Exclusive Deal: Your Success Companion - Only ₹200">
@@ -48,8 +47,8 @@
     </script>
 
     <!-- Title and Favicon -->
-    <title>Single Product Deal</title>
-    <link rel="shortcut icon" href="https://app.dealzpage.com/templates/assets/ico/favicon.png">
+    <title>Exclusive Product Deal: Your Success Companion</title>
+    <link rel="shortcut icon" href="https://v.spm.in.net/logo2.ico">
     
     <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -109,9 +108,9 @@ type="text/javascript"></script>
         }
 
         .product-title {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .price-section {
@@ -125,8 +124,8 @@ type="text/javascript"></script>
         }
 
         .regular-price {
-            font-size: 18px;
-            color: #666;
+            font-size: 16px;
+            color: #999;
             text-decoration: line-through;
         }
 
@@ -187,18 +186,26 @@ type="text/javascript"></script>
         }
 
         .product-details h2 {
-            font-size: 20px;
+            font-size: 22px;
             color: #333;
             margin-bottom: 10px;
         }
 
         .product-details ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 0;
         }
 
         .product-details ul li {
             margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .product-details ul li::before {
+            content: '✔';
+            color: #e63946;
+            margin-right: 10px;
         }
 
         /* Apply Roboto font to English text */
@@ -210,13 +217,29 @@ type="text/javascript"></script>
         .bengali-text {
             font-family: 'Noto Sans Bengali', sans-serif;
         }
+
+        .footer {
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #fca311;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
+
+    <!-- Asynchronous JavaScript loading for improved performance -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
 <BODY oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
     <!-- Header with Business Logo -->
     <div class="header">
-        <img src="https://v.spm.in.net/logo2.png" alt="Business Logo" style="width:150px;">
+        <img src="https://v.spm.in.net/logo.png" alt="Business Logo" style="width:150px;">
         <h1>Exclusive Product Deal</h1>
     </div>
 
@@ -253,17 +276,17 @@ type="text/javascript"></script>
         <!-- Get the Deal Button -->
         <a href="https://wa.me/?text=I'm%20interested%20in%20placing%20an%20order%20for%20this%20product!" class="get-deal-btn">
             GET THE DEAL
-            <small>(Place Your Order on WhatsApp)</small>
+            <small>(Order Now on WhatsApp)</small>
         </a>
 
         <!-- Product Details Section -->
         <div class="product-details">
             <h2>Product Details</h2>
             <ul>
-                <li>High-quality materials used for durability and comfort.</li>
-                <li>Elegant and versatile design suitable for multiple occasions.</li>
-                <li>Available in various sizes to fit your unique style.</li>
-                <li>Easy to care for and maintain, keeping it looking new for longer.</li>
+                <li>High-quality materials for durability and comfort.</li>
+                <li>Elegant design suitable for multiple occasions.</li>
+                <li>Available in various sizes to fit your style.</li>
+                <li>Easy to care for and maintain.</li>
                 <li>Perfect gift choice for friends and family.</li>
             </ul>
         </div>
@@ -271,21 +294,18 @@ type="text/javascript"></script>
         <!-- Get the Deal Button -->
         <a href="https://wa.me/?text=I'm%20interested%20in%20placing%20an%20order%20for%20this%20product!" class="get-deal-btn">
             GET THE DEAL
-            <small>(Place Your Order on WhatsApp)</small>
+            <small>(Order Now on WhatsApp)</small>
         </a>
 
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <p>&copy; <script>document.write(new Date().getFullYear())
-
-</script>.&nbsp;Your Company Name. All rights reserved.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Your Company Name. All rights reserved. <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
     </div>
 
     <!-- Countdown Timer Script -->
     <script>
-        // Countdown Timer
         function countdownTimer() {
             const countDownDate = new Date("September 30, 2024 23:59:59").getTime();
             const now = new Date().getTime();
@@ -303,6 +323,16 @@ type="text/javascript"></script>
             }
         }
         setInterval(countdownTimer, 1000);
+    </script>
+
+    <!-- Google Analytics for tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXX-Y');
     </script>
 </body>
 </html>
